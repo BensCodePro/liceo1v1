@@ -195,8 +195,8 @@
 
 								<?php	the_post_navigation(
 									array(
-										'prev_text' => '<span class="nav-subtitle"> <span class="fa fa-arrow-left" aria-hidden="true"> </span>   ' . esc_html__( 'Previous Post', 'w3layouts' ) . '</span> <span class="nav-title">%title</span>',
-										'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next Post', 'w3layouts' ) . ' <span class="fa fa-arrow-right ml-2" aria-hidden="true"></span> </span>  <span class="nav-title">%title</span>',
+										'prev_text' => '<span class="nav-subtitle"> <span class="fa fa-arrow-left" aria-hidden="true"> </span>   ' . esc_html__( 'Publicación anterior', 'w3layouts' ) . '</span> <span class="nav-title">%title</span>',
+										'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Siguiente publicación', 'w3layouts' ) . ' <span class="fa fa-arrow-right ml-2" aria-hidden="true"></span> </span>  <span class="nav-title">%title</span>',
 									)
 								);
 								?>

@@ -43,16 +43,12 @@
                             class="btn btn-style mt-lg-5 mt-4"><?php echo get_theme_mod( "HomePageBannerBtnText" );if(get_theme_mod( "HomePageBannerBtnText" )==''){echo 'Admission Now';}?></a>
                     </div>
                 </div>
-                <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">
-                    <div class="sub-banner-image mx-auto">
-                        <img src="<?php if(get_theme_mod('HomePageBannerImage')!=''){ echo wp_get_attachment_url( get_theme_mod('HomePageBannerImage') );} if(wp_get_attachment_url(get_theme_mod('HomePageBannerImage'))=='') { echo  get_template_directory_uri()."/assets/images/banner.png";  }?>"
-                            class="img-fluid position-relative" alt=" ">
-                    </div>
-                    <div class="banner-style-1 position-absolute">
-                        <div class="banner-style-2 position-relative">
-                            <h4><?php echo get_theme_mod( "HomePageBannerImageTitle" );if(get_theme_mod( "HomePageBannerImageTitle" )==''){echo 'Back to School';}?>
-                            </h4>
-                        </div>
+                <!--Here I delete a fotos banner-->
+
+                
+
+              
+
                     </div>
                 </div>
             </div>
@@ -65,6 +61,9 @@
     <?php echo get_theme_mod( "HomePageBannerBottomArea","" );?>
 </section>
 <!-- //Homepage Banner section -->
+
+
+<!-- //Homepage Banner section  Endhere-->
 
 
 <!-- HomePage Features -->
@@ -80,45 +79,45 @@
         <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
             <p class="text-uppercase">
                 <?php echo get_theme_mod( "HomePageFeaturesTitle1" );if(get_theme_mod( "HomePageFeaturesTitle1" )==''){echo 'Best Features';}?></p>
-            <h3 class="title-style">
-                <?php echo get_theme_mod( "HomePageFeaturesTitle2" );if(get_theme_mod( "HomePageFeaturesTitle2" )==''){echo 'Achieve Your Goals With Edu School';}?>
-            </h3>
+            <h5 class="title-style">
+                <?php echo get_theme_mod( "HomePageFeaturesTitle2" );if(get_theme_mod( "HomePageFeaturesTitle2" )==''){echo 'Logre sus objetivos con Liceo N°1';}?>
+            </h5>
         </div>
 
+       
         <div class="row justify-content-center">
 
-            <?php $HomePageFeature1Requir = get_theme_mod( "HomePageFeature1Required","1")?>
-            <?php if( $HomePageFeature1Requir==1 ){?>
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box icon-box-clr-1">
-                    <div class="icon"><i
-                            class="<?php echo get_theme_mod( "HomePageFeature1Icon" );if(get_theme_mod( "HomePageFeature1Icon" )==''){echo 'fas fa-user-friends';}?>"></i>
-                    </div>
-                    <h4 class="title"><a
-                            href="<?php echo get_theme_mod( "HomePageFeature1Url","#url" ); ?>"><?php echo get_theme_mod( "HomePageFeature1Title" );if(get_theme_mod( "HomePageFeature1Title" )==''){echo 'Expert Teachers';}?></a>
-                    </h4>
-                    <p><?php echo get_theme_mod( "HomePageFeature1Content","Ras effic itur metusga via suscipit consect eturerse adi unde omnis." );?>
-                    </p>
-                </div>
-            </div>
-            <?php } ?>
+<?php $HomePageFeature1Requir = get_theme_mod( "HomePageFeature1Required","1")?>
+<?php if( $HomePageFeature1Requir==1 ){?>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+    <div class="icon-box icon-box-clr-1">
+        <div class="icon"><i
+                class="<?php echo get_theme_mod( "HomePageFeature1Icon" );if(get_theme_mod( "HomePageFeature1Icon" )==''){echo 'fas fa-user-friends';}?>"></i>
+        </div>
+        <h4 class="title"><a
+                href="<?php echo get_theme_mod( "HomePageFeature1Url","#url" ); ?>"><?php echo get_theme_mod( "HomePageFeature1Title" );if(get_theme_mod( "HomePageFeature1Title" )==''){echo 'Expert Teachers';}?></a>
+        </h4>
+        <p><?php echo get_theme_mod( "HomePageFeature1Content","Ras effic itur metusga via suscipit consect eturerse adi unde omnis." );?>
+        </p>
+    </div>
+</div>
+<?php } ?>
 
-            <?php $HomePageFeature2Requir = get_theme_mod( "HomePageFeature2Required","1")?>
-            <?php if( $HomePageFeature2Requir==1 ){?>
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-md-0 mt-4">
-                <div class="icon-box icon-box-clr-2">
-                    <div class="icon"><i
-                            class="<?php echo get_theme_mod( "HomePageFeature2Icon" );if(get_theme_mod( "HomePageFeature2Icon" )==''){echo 'fas fa-book-reader';}?>"></i>
-                    </div>
-                    <h4 class="title"><a
-                            href="<?php echo get_theme_mod( "HomePageFeature2Url","#url" ); ?>"><?php echo get_theme_mod( "HomePageFeature2Title" );if(get_theme_mod( "HomePageFeature2Title" )==''){echo 'Quality Education';}?></a>
-                    </h4>
-                    <p><?php echo get_theme_mod( "HomePageFeature2Content","Ras effic itur metusga via suscipit consect eturerse adi unde omnis." );?>
-                    </p>
-                </div>
-            </div>
-            <?php } ?>
-
+<?php $HomePageFeature2Requir = get_theme_mod( "HomePageFeature2Required","1")?>
+<?php if( $HomePageFeature2Requir==1 ){?>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-md-0 mt-4">
+    <div class="icon-box icon-box-clr-2">
+        <div class="icon"><i
+                class="<?php echo get_theme_mod( "HomePageFeature2Icon" );if(get_theme_mod( "HomePageFeature2Icon" )==''){echo 'fas fa-book-reader';}?>"></i>
+        </div>
+        <h4 class="title"><a
+                href="<?php echo get_theme_mod( "HomePageFeature2Url","#url" ); ?>"><?php echo get_theme_mod( "HomePageFeature2Title" );if(get_theme_mod( "HomePageFeature2Title" )==''){echo 'Quality Education';}?></a>
+        </h4>
+        <p><?php echo get_theme_mod( "HomePageFeature2Content","Ras effic itur metusga via suscipit consect eturerse adi unde omnis." );?>
+        </p>
+    </div>
+</div>
+<?php } ?>
             <?php $HomePageFeature3Requir = get_theme_mod( "HomePageFeature3Required","1")?>
             <?php if( $HomePageFeature3Requir==1 ){?>
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-lg-0 mt-4">
@@ -199,7 +198,7 @@
             </div>
             <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
                 <h3 class="title-style">
-                    <?php echo get_theme_mod( "HomePageAboutTitle1" );if(get_theme_mod( "HomePageAboutTitle1" )==''){echo 'Somos la mejor opción para su hijo';}?>
+                    <?php echo get_theme_mod( "HomePageAboutTitle1" );if(get_theme_mod( "HomePageAboutTitle1" )==''){echo 'Somos la mejor opción para sus hijas';}?>
                 </h3>
                 <p class="mt-4"><?php echo get_theme_mod( "HomePageAboutContent","Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                     ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -246,9 +245,9 @@
         <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
             <p class="text-uppercase">
                 <?php echo get_theme_mod( "HomePageWCUTitle1" );if(get_theme_mod( "HomePageWCUTitle1" )==''){echo 'Por qué elegirnos';}?></p>
-            <h3 class="title-style">
+            <h5 class="title-style">
                 <?php echo get_theme_mod( "HomePageWCUTitle2" );if(get_theme_mod( "HomePageWCUTitle2" )==''){echo 'Herramientas para maestras y estudiantes';}?>
-            </h3>
+            </h5>
         </div>
 
         <div class="row content23-col-2 text-center">
@@ -273,6 +272,11 @@
                     </h4>
                 </div>
             </div>
+
+
+            
+            
+
             <div class="col-md-6 mt-md-0 mt-4">
                 <div class="content23-grid content23-grid2">
                     <style>
@@ -295,8 +299,10 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+
+
 
 </section>
 <?php } ?>

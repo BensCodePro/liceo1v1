@@ -76,7 +76,7 @@
             </div>
             <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
                 <h3 class="title-style">
-                    <?php echo get_theme_mod( "AboutPageAboutTitle1" );if(get_theme_mod( "AboutPageAboutTitle1" )==''){echo 'Somos la mejor opción para su hijo';}?>
+                    <?php echo get_theme_mod( "AboutPageAboutTitle1" );if(get_theme_mod( "AboutPageAboutTitle1" )==''){echo 'Somos la mejor opción para su hija';}?>
                 </h3>
                 <p class="mt-4"><?php echo get_theme_mod( "AboutPageAboutContent","Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                     ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -337,7 +337,7 @@
 
             <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
                 <p class="text-uppercase"><?php echo get_theme_mod( "AboutPageTeamTitle1" );if(get_theme_mod( "AboutPageTeamTitle1" )==''){echo 'Nuestro Equipo';}?></p>
-                <h3 class="title-style"><?php echo get_theme_mod( "AboutPageTeamTitle2" );if(get_theme_mod( "AboutPageTeamTitle2" )==''){echo 'Conoce a nuestras maestr@s';}?></h3>
+                <h3 class="title-style"><?php echo get_theme_mod( "AboutPageTeamTitle2" );if(get_theme_mod( "AboutPageTeamTitle2" )==''){echo '';}?></h3>
             </div>
 
             <div class="row text-center left-side justify-content-center">
@@ -460,6 +460,7 @@
                         </a>
                     </div>
                 </div>
+                
             <?php }?>
 
             </div>

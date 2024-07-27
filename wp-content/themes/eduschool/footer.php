@@ -52,29 +52,49 @@
                     <?php }?>
                 </div>
                 <?php }?>
+                
+                    <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
 
-                <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                 <?php $FooterMenu1TitleStatus = get_theme_mod( "FooterMenu1TitleRequired","1")?>
 
-                    <?php $FooterMenu1TitleStatus = get_theme_mod( "FooterMenu1TitleRequired","1")?>
-                    <?php if( $FooterMenu1TitleStatus==1 ){?>
-                    <h6 class="footer-title-29 FooterMenu1Title">
-                        <?php echo get_theme_mod( "FooterMenu1Title" ); if(get_theme_mod( "FooterMenu1Title" )==''){echo 'Quick Links';}?></h6>
-                    <?php }?>
+                 <?php if( $FooterMenu1TitleStatus==1 ){?>
 
-                    <?php
-                        if(is_active_sidebar('footer-menu-list-1')){
-                        dynamic_sidebar('footer-menu-list-1');
-                        }
-                    ?>
+                 <h6 class="footer-title-29 FooterMenu1Title">
 
-                </div>
+               <?php echo get_theme_mod( "FooterMenu1Title" ); if(get_theme_mod( "FooterMenu1Title" )==''){echo 'Quick Links'  ;}?></h6>
+
+                 <?php }?>
+
+
+
+                        <?php 
+
+               if(is_active_sidebar('footer-menu-list-1')){ 
+
+                     dynamic_sidebar('footer-menu-list-1'); 
+
+               } 
+
+                  ?>
+              <!-- Add your links here -->
+
+            <ul>
+
+
+               <li><a href="http://localhost/liceo1/2024/07/18/noticias/"></a>Eventos</li>
+               <li><a href="http://localhost/liceo1/2021/11/11/noticias-dos/">Talleres</a></li>
+               <li><a href="http://localhost/liceo1/2021/11/11/how-technology-can-make-reading-better/">Comunidad</a></li>
+
+         </ul>
+
+        </div>
 
                 <div class="col-lg-2 col-md-3 col-6 ps-lg-5 ps-lg-4 footer-list-29 mt-md-0 mt-4">
 
                     <?php $FooterMenu2TitleStatus = get_theme_mod( "FooterMenu2TitleRequired","1")?>
                     <?php if( $FooterMenu2TitleStatus==1 ){?>
                     <h6 class="footer-title-29 FooterMenu2Title">
-                        <?php echo get_theme_mod( "FooterMenu2Title" ); if(get_theme_mod( "FooterMenu2Title" )==''){echo 'Explore';}?></h6>
+                        <?php echo get_theme_mod( "FooterMenu2Title" ); if(get_theme_mod( "FooterMenu2Title" )==''){echo 'Nosotros';}?></h6>
                     <?php }?>
 
                     <?php
@@ -82,6 +102,15 @@
                         dynamic_sidebar('footer-menu-list-2');
                         }
                     ?>
+
+                     <!-- Add your links here -->
+
+            <ul>
+              <li><a href="http://localhost/liceo1/blog/">Eventos</a></li>
+              <li><a href="http://localhost/liceo1/2021/11/11/noticias-dos/">Talleres</a></li>
+              <li><a href="http://localhost/liceo1/2021/11/11/how-technology-can-make-reading-better/">Comunidad</a></li>
+
+            </ul>
 
                 </div>
 

@@ -426,6 +426,7 @@ cite,
 em,
 i {
 	font-style: italic;
+	visibility: hidden;
 }
 
 blockquote {

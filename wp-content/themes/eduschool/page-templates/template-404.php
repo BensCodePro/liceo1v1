@@ -46,6 +46,7 @@
 
                 ?>);         
             }
+            
         </style>
         <div class="container ErrorpageBlock">
             <div class="w3l-error-block text-center">
@@ -59,7 +60,7 @@
                     <?php if( $ErrorPageSearchFormRequir==1 ){?>
                     <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post" class="search-error position-relative mt-4 mx-auto"
                         style="max-width:450px">
-                        <input type="search" class="search-input" name="s" placeholder="Search here.." required="">
+                        <input type="search" class="search-input" name="s" placeholder="Busqueda..." required="">
                         <button class="btn error-btn"><span class="fa fa-search"></span></button>
                     </form>
                     <?php } ?>
